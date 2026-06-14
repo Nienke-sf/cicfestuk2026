@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cameroonian International Cultural Festival UK ">
+  <!-- <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Sips Galore",
+      "url": "https://sipsgalore.uk",
+      "sameAs": [
+        "https://www.instagram.com/sipsgalore",
+        "https://www.tiktok.com/@sipsgalore"
+      ],
+      "description": "Premium cocktail kits and drinks boxes delivered across the UK."
+    }
+  </script> -->
+  <title>CICFEST UK </title>
+  <!-- Logo icon  -->
+   <link rel="icon" type="image/png" href="res/favicon.PNG">
+  <!-- Bulma Setup -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+  <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Animation Setup -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+  <!-- ////////////////////////////////////////////////////
+       NAVBAR
+  //////////////////////////////////////////////////// -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <!-- LOGO / BRAND -->
+            <div class="navbar-brand">
+                <a class="navbar-item brand-logo" href="#home">
+                    <img src="res/logo.png" alt="CICFEST UK" width="112" height="28">
+                <div class="brand-wordmark">
+                    <span class="brand-est">CM·GB 2026</span>
+                </div>
+                </a>
+                <!-- HAMBURGER -->
+                <a role="button" class="navbar-burger" id="nav-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                </a>
+            </div>
+        
+            <!-- LINKS -->
+            <div class="navbar-menu" id="navbar-menu">
+                <div class="navbar-end">
+                <a class="navbar-item nav-link active" href="#home">Home</a>
+                <a class="navbar-item nav-link" href="about.html">About</a>
+                <a class="navbar-item nav-link" href="#lineup">Lineup</a>
+                <a class="navbar-item nav-link" href="gallery.html">Gallery</a>
+                <a class="navbar-item nav-link" href="#location">Location</a>
+                <a class="navbar-item nav-link" href="#contact">Contact</a>
+                <div class="navbar-item">
+                    <a href="#tickets" class="button nav-cta-btn">Get Tickets</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+   <!-- ////////////////////////////////////////////////////
+       STRIPE ACCENT (3-colour bar under nav)
+  //////////////////////////////////////////////////// -->
+    <div class="stripe">
+        <span class="s1"></span>
+        <span class="s2"></span>
+        <span class="s3"></span>
+    </div>
+
+<!-- ////////////////////////////////////////////////////
+       HERO
+  //////////////////////////////////////////////////// -->
+    <section id="home" class="hero-section">
+        <p class="hero-kicker">1st Edition · Milton Keynes, UK · 25 July 2026</p>
+    
+        <h1 class="hero-title">
+        Cameroo<span class="outline-word">nian</span><br>
+        International<br>
+        Cultural <span class="outline-word">Festival</span>
+        </h1>
+    
+        <p class="hero-tagline">
+        One day. One community. Infinite culture. Join us for a vibrant
+        celebration of Cameroonian music, food, dance and heritage — right in
+        the heart of Milton Keynes.
+        </p>
+    
+        <!-- TICKET CARD -->
+        <div class="hero-ticket">
+            <div class="ht-date">
+                <div class="ht-month">July</div>
+                <div class="ht-day">25</div>
+                <div class="ht-year">2026</div>
+            </div>
+            <div class="ht-info">
+                <p class="ht-time">From 10:00 AM</p>
+                <p class="ht-venue">
+                Drayton Park School<br>
+                Bala Way, Bletchley<br>
+                Milton Keynes, MK2 3HJ
+                </p>
+                <a href="#tickets" class="ht-btn">Book now →</a>
+            </div>
+        </div>
+    </section>
+<!-- ////////////////////////////////////////////////////
+       CONVEYOR BELT — Artist ticker
+  //////////////////////////////////////////////////// -->
+    <div class="conveyor-outer">
+        <p class="conveyor-label">Performing live · 25 July 2026 · hover to pause</p>
+        <div class="conveyor-track">
+            <div class="belt">
+                <!-- Set A -->
+                <div class="a-pill"><div class="av av-h">🎤</div><div><p class="aname">SHEYPOUNDER</p><p class="atag">⭐ Headliner</p></div></div>
+                <span class="belt-sep"></span>
+                <div class="a-pill"><div class="av av-s">🎵</div><div><p class="aname">Vinhora</p><p class="atag">Live Act</p></div></div>
+                <span class="belt-sep"></span>
+                <div class="a-pill"><div class="av av-s">👑</div><div><p class="aname">Richard Kings</p><p class="atag">Live Act</p></div></div>
+                <span class="belt-sep"></span>
+                <div class="a-pill"><div class="av av-s">🎶</div><div><p class="aname">Asaba</p><p class="atag">Live Act</p></div></div>
+                <span class="belt-sep"></span>
+                <div class="a-pill"><div class="av av-s">🔥</div><div><p class="aname">Maxy Manorh</p><p class="atag">Live Act</p></div></div>
+                <span class="belt-sep"></span>
+                <!-- Set B — duplicate for seamless loop -->
+                <div class="a-pill"><div class="av av-h">🎤</div><div><p class="aname">SHEYPOUNDER</p><p class="atag">⭐ Headliner</p></div></div>
+                <span class="belt-sep"></span>
+                <div class="a-pill"><div class="av av-s">🎵</div><div><p class="aname">Vinhora</p><p class="atag">Live Act</p></div></div>
+                <span class="belt-sep"></span>
+                <div class="a-pill"><div class="av av-s">👑</div><div><p class="aname">Richard Kings</p><p class="atag">Live Act</p></div></div>
+                <span class="belt-sep"></span>
+                <div class="a-pill"><div class="av av-s">🎶</div><div><p class="aname">Asaba</p><p class="atag">Live Act</p></div></div>
+                <span class="belt-sep"></span>
+                <div class="a-pill"><div class="av av-s">🔥</div><div><p class="aname">Maxy Manorh</p><p class="atag">Live Act</p></div></div>
+                <span class="belt-sep"></span>
+            </div>
+        </div>
+    </div>
+
+  <!-- ////////////////////////////////////////////////////
+       ABOUT
+  //////////////////////////////////////////////////// -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="columns is-vcentered">
+        
+
+        <!-- TEXT + FEATURE CARDS -->
+        <div class="column is-half">
+            <div class="section-label">
+                <div class="flag-stripe">
+                    <span class="fs-1"></span>
+                    <span class="fs-2"></span>
+                    <span class="fs-3"></span>
+                </div>
+                <span>About the festival</span>
+            </div>
+          <h2 class="section-title">Celebrating Cameroonian Culture in the UK</h2>
+          <p class="section-body">
+            CICFEST UK is the first Cameroonian International Cultural Festival to be held
+            in the United Kingdom. Bringing together music, dance, food, fashion and heritage
+            in one incredible day of celebration in Milton Keynes.
+          </p>
+          <a href="about.html" class="button outline-btn">Find out more</a>
+        </div>
+        <!-- FEATURE CARDS -->
+            <div class="features-grid">
+                <div class="feature-card">
+                <div class="fc-icon">
+                    <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="18" r="6" stroke="currentColor" stroke-width="2.5"/><path d="M12 42c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M24 6v2M24 30v2M38 18h-2M12 18h2M33.8 10.2l-1.4 1.4M15.6 28.4l-1.4 1.4M33.8 25.8l-1.4-1.4M15.6 9.6l1.4 1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="fc-title">Live Music</h3>
+                <p class="fc-body">The finest acts in Afrobeats, Makossa, Bikutsi, and contemporary African music for an unforgettable day of live performance.</p>
+                </div>
+    
+                <div class="feature-card">
+                <div class="fc-icon">
+                    <svg viewBox="0 0 48 48" fill="none"><path d="M18 6c0 0-2 4-2 8s2 8 2 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M24 6c0 0-2 4-2 8s2 8 2 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M30 6c0 0-2 4-2 8s2 8 2 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M12 22h24l-2 20H14L12 22z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="fc-title">Food &amp; Flavour</h3>
+                <p class="fc-body">Savour the authentic tastes of Cameroon — from Ndolé and Eru to Suya and Puff Puff. A true culinary journey.</p>
+                </div>
+    
+                <div class="feature-card">
+                <div class="fc-icon">
+                    <svg viewBox="0 0 48 48" fill="none"><circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="2.5"/><circle cx="32" cy="16" r="7" stroke="currentColor" stroke-width="2.5"/><path d="M4 42c0-6.627 5.373-12 12-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M32 30c6.627 0 12 5.373 12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M20 32c2.5-1 5.5-1 8 0" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="fc-title">Community</h3>
+                <p class="fc-body">More than a festival — a gathering of the Cameroonian diaspora, friends and allies united by culture.</p>
+                </div>
+            </div>
+ 
+      </div>
+    </div>
+  </section>
+
+   <!-- ////////////////////////////////////////////////////
+       LINEUP
+  //////////////////////////////////////////////////// -->
+    <section id="lineup" class="section section-alt">
+        <div class="container">
+            <div class="section-label">
+                <div class="flag-stripe">
+                    <span class="fs-1"></span>
+                    <span class="fs-2"></span>
+                    <span class="fs-3"></span>
+                </div>
+                <span class="">Performers</span>
+            </div>
+            <h2 class="section-title has-text-centered">The Lineup</h2>
+        
+            <div class="columns is-multiline">
+        
+                <!-- HEADLINER -->
+                <div class="column is-full">
+                    <div class="artist-card artist-headliner">
+                        <div class="img-placeholder artist-img">Photo</div>
+                        <div class="artist-info">
+                            <span class="artist-tag">⭐ Headliner</span>
+                            <h3 class="artist-name">SHEYPOUNDER</h3>
+                            <p class="artist-bio">Artist bio / description goes here.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- LIVE ACTS -->
+                <div class="column is-one-quarter">
+                    <div class="artist-card">
+                        <div class="img-placeholder artist-img">Photo</div>
+                        <span class="artist-tag">Live Act</span>
+                        <h3 class="artist-name">Vinhora</h3>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="artist-card">
+                        <div class="img-placeholder artist-img">Photo</div>
+                        <span class="artist-tag">Live Act</span>
+                        <h3 class="artist-name">Richard Kings</h3>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="artist-card">
+                        <div class="img-placeholder artist-img">Photo</div>
+                        <span class="artist-tag">Live Act</span>
+                        <h3 class="artist-name">Asaba</h3>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="artist-card">
+                        <div class="img-placeholder artist-img">Photo</div>
+                        <span class="artist-tag">Live Act</span>
+                        <h3 class="artist-name">Maxy Manorh</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!-- ////////////////////////////////////////////////////
+       TICKETS
+  //////////////////////////////////////////////////// -->
+  <section id="tickets" class="section section-alt tickets-section">
+    <div class="container">
+ 
+      <!-- SECTION LABEL -->
+      <div class="section-label">
+        <div class="flag-stripe">
+          <span class="fs-1"></span>
+          <span class="fs-2"></span>
+          <span class="fs-3"></span>
+        </div>
+        <span>Tickets</span>
+      </div>
+ 
+      <h2 class="section-title">Secure Your Spot</h2>
+      <p class="section-body">Early birds grab their place. Don't miss the biggest Cameroonian celebration in the UK this year.</p>
+ 
+      <!-- TICKET TIERS -->
+      <div class="ticket-tiers">
+ 
+        <div class="ticket-tier">
+          <div class="tier-header">
+            <span class="tier-label">FREE for Under 15s</span>
+            <span class="tier-price">FREE</span>
+          </div>
+          <p class="tier-desc">Family/Group ticket offering free entry for attendees 15 &amp; under. Up to 3 children welcome with 2 adult tickets.</p>
+        </div>
+ 
+        <div class="ticket-tier">
+          <div class="tier-header">
+            <span class="tier-label">Rising Roots &mdash; Ages 16–21</span>
+            <span class="tier-price">TBC</span>
+          </div>
+          <p class="tier-desc">Discounted youth rate for ages 16 to 21 years old. Entry for 1 person at the gate. Valid ID required.</p>
+        </div>
+ 
+        <div class="ticket-tier">
+          <div class="tier-header">
+            <span class="tier-label">General Adults 22+</span>
+            <span class="tier-price">TBC</span>
+          </div>
+          <p class="tier-desc">Standard adult entry. First-come, first-served. Limited capacity — book early to guarantee your place.</p>
+        </div>
+ 
+      </div>
+ 
+      <!-- NOTICE -->
+      <div class="ticket-notice">
+        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 14a6 6 0 110-12 6 6 0 010 12zm-.75-4.75a.75.75 0 001.5 0V9a.75.75 0 00-1.5 0v2.25zM10 7.5A.75.75 0 1010 6a.75.75 0 000 1.5z"/></svg>
+        <span>ID may be required &mdash; valid photo ID for ages 16+. Groups of 10 or more receive a group discount, contact us for details.</span>
+      </div>
+ 
+      <!-- CTA -->
+      <div class="ticket-cta-wrap">
+        <a href="https://www.eventbrite.co.uk/e/cameroonian-international-cultural-festival-uk-tickets-1983907889904" target="_blank" class="button cta-btn">Buy Your Tickets Here &rarr;</a>
+      </div>
+ 
+    </div>
+  </section>
+
+
+
+  <!-- ////////////////////////////////////////////////////
+       SCHEDULE
+  //////////////////////////////////////////////////// -->
+    <section id="schedule" class="section">
+        <div class="container">
+            <div class="section-label">
+                <div class="flag-stripe">
+                    <span class="fs-1"></span>
+                    <span class="fs-2"></span>
+                    <span class="fs-3"></span>
+                </div>
+                <span>TimeTable</span>
+            </div>
+            <p class="section-eyebrow has-text-centered">25 July 2026</p>
+            <h2 class="section-title has-text-centered">Day Schedule</h2>
+        
+            <div class="schedule-list">
+        
+                <div class="schedule-item">
+                    <p class="sched-time">10:00 AM</p>
+                    <div class="sched-detail">
+                        <p class="sched-act">Gates Open</p>
+                        <p class="sched-stage">Main Entrance : By Abbey Road</p>
+                    </div>
+                </div>
+
+                 <!-- WHAT TO EXPECT -->
+                <p class="section-eyebrow has-text-centered expect-label">Throughout the Day</p>
+            
+                <div class="expect-grid">
+            
+                    <div class="expect-card">
+                    <div class="expect-icon">🎭</div>
+                    <h4 class="expect-title">Cultural Performances</h4>
+                    <p class="expect-body">Traditional music, dance and live entertainment from cultural groups across Cameroon — all on the central performance stage.</p>
+                    </div>
+            
+                    <div class="expect-card">
+                    <div class="expect-icon">🥁</div>
+                    <h4 class="expect-title">Grand Cultural Parade</h4>
+                    <p class="expect-body">A vibrant procession celebrating the rich heritage, rhythms and identity of Cameroonian communities.</p>
+                    </div>
+            
+                    <div class="expect-card">
+                    <div class="expect-icon">🍲</div>
+                    <h4 class="expect-title">Food Village</h4>
+                    <p class="expect-body">Taste traditional delicacies from different villages — Ndolé, Eru, Suya, Puff Puff and much more.</p>
+                    </div>
+            
+                    <div class="expect-card">
+                    <div class="expect-icon">🛍️</div>
+                    <h4 class="expect-title">Cultural Market</h4>
+                    <p class="expect-body">Browse and buy handmade crafts, traditional clothing, fabrics, jewellery, pottery, wood carvings and paintings.</p>
+                    </div>
+            
+                    <div class="expect-card">
+                    <div class="expect-icon">🏆</div>
+                    <h4 class="expect-title">Sports & Traditional Games</h4>
+                    <p class="expect-body">Tug-of-war, Sack races, Ludo, Draft, Dodge Game, Relay races and more fun traditional activities for all ages.</p>
+                    </div>
+            
+                    <div class="expect-card">
+                    <div class="expect-icon">👶</div>
+                    <h4 class="expect-title">Kids Area</h4>
+                    <p class="expect-body">A dedicated space for younger ones to play, explore and enjoy the festival safely.</p>
+                    </div>
+            
+                </div>
+
+                <div class="schedule-item">
+                    <p class="sched-time">21:00 PM</p>
+                    <div class="sched-detail">
+                        <p class="sched-act">Day Closure</p>
+                        <p class="sched-stage">Safe travels</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ////////////////////////////////////////////////////
+       CONTACT
+  //////////////////////////////////////////////////// -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+ 
+      <div class="section-label">
+        <div class="flag-stripe">
+          <span class="fs-1"></span>
+          <span class="fs-2"></span>
+          <span class="fs-3"></span>
+        </div>
+        <span>Get In Touch</span>
+      </div>
+ 
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-body">For sponsorship, vendor enquiries, partnerships, or general questions &mdash; we&rsquo;d love to hear from you.</p>
+ 
+      <!-- CONTACT CARDS -->
+      <div class="contact-cards-grid">
+ 
+        <a href="tel:+447700000000" class="contact-card">
+          <div class="cc-icon">📞</div>
+          <div class="cc-body">
+            <h4 class="cc-title">Phone</h4>
+            <p class="cc-info">+44 (0)77 0000 0000</p>
+            <p class="cc-info">+44 (0)77 0000 0001</p>
+          </div>
+        </a>
+ 
+        <a href="mailto:info@cicfestuk.com" class="contact-card">
+          <div class="cc-icon">✉️</div>
+          <div class="cc-body">
+            <h4 class="cc-title">Email</h4>
+            <p class="cc-info">info@cicfestuk.com</p>
+          </div>
+        </a>
+ 
+        <a href="https://whatsapp.com/channel/cicfestuk" target="_blank" rel="noopener" class="contact-card">
+          <div class="cc-icon">💬</div>
+          <div class="cc-body">
+            <h4 class="cc-title">WhatsApp Channel</h4>
+            <p class="cc-info">Join our WhatsApp Channel for live updates</p>
+          </div>
+        </a>
+ 
+        <a href="https://cicfestuk.com" target="_blank" rel="noopener" class="contact-card">
+          <div class="cc-icon">🌍</div>
+          <div class="cc-body">
+            <h4 class="cc-title">Website</h4>
+            <p class="cc-info">cicfestuk.com</p>
+          </div>
+        </a>
+ 
+      </div>
+    </div>
+  </section>
+ 
+ 
+  
+ <!-- ////////////////////////////////////////////////////
+       LOCATION
+  //////////////////////////////////////////////////// -->
+  <section id="location" class="section">
+    <div class="container">
+      <div class="columns is-vcentered">
+ 
+        <!-- MAP PLACEHOLDER -->
+        <div class="column is-half">
+          <div class="img-placeholder map-placeholder">Map</div>
+        </div>
+ 
+        <!-- ADDRESS -->
+        <div class="column is-half">
+            <div class="section-label">
+                <div class="flag-stripe">
+                    <span class="fs-1"></span>
+                    <span class="fs-2"></span>
+                    <span class="fs-3"></span>
+                </div>
+                <span>Venue</span>
+            </div>
+          <h2 class="section-title">How to Find Us</h2>
+          <p class="section-body">
+            <strong>Drayton Park School</strong><br>
+            Bala Way, Bletchley<br>
+            Milton Keynes, MK2 3HJ
+          </p>
+          <p class="section-body">Gates open from 10:00 AM on 25 July 2026.</p>
+          <a href="https://maps.google.com" target="_blank" class="button outline-btn">Open in Maps →</a>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ <!-- ////////////////////////////////////////////////////
+      Custom Divider
+  //////////////////////////////////////////////////// -->
+   <hr class="custom-divider">
+
+    <!-- ////////////////////////////////////////////////////
+      Socail media section
+  //////////////////////////////////////////////////// -->
+  <section class="section has-text-centered insta-section">
+    <div class="container">
+      <h2 class="icon-title is-4">Follow us on Social Media</h2>
+      <a href="" target="_blank">
+        <img class="insta-icon" src="res/facebook.png" alt="Facebook">
+      </a>
+      <a href="" target="_blank">
+        <img class="insta-icon" src="res/instagram.png" alt="Instagram">
+      </a>
+      <a href="" target="_blank">
+        <img class="insta-icon" src="res/tiktok.png" alt="TikTok">
+      </a>
+    </div>
+  </section>
+
+
+    <!-- ////////////////////////////////////////////////////
+       FOOTER
+  //////////////////////////////////////////////////// -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="columns">
+ 
+        <div class="column is-one-third">
+          <p class="footer-brand">CICFESTUK</p>
+          <p class="footer-sub">CM·GB 2026</p>
+          <p class="footer-copy">© 2026 CICFEST UK. All rights reserved.</p>
+        </div>
+ 
+        <div class="column is-one-third">
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#lineup">Lineup</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+ 
+        <div class="column is-one-third">
+          <p class="footer-heading">Follow Us</p>
+          <ul class="footer-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+ 
+      </div>
+    </div>
+  </footer>
