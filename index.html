@@ -38,7 +38,7 @@
             <!-- LOGO / BRAND -->
             <div class="navbar-brand">
                 <a class="navbar-item brand-logo" href="#home">
-                    <img src="res/logo.png" alt="CICFEST UK" width="112" height="28">
+                    <img class="logo" src="res/logo.png" alt="CICFEST UK">
                 <div class="brand-wordmark">
                     <span class="brand-est">CM·GB 2026</span>
                 </div>
@@ -222,7 +222,7 @@
                 <!-- HEADLINER -->
                 <div class="column is-full">
                     <div class="artist-card artist-headliner">
-                        <div class="img-placeholder artist-img">Photo</div>
+                        <img class="img-placeholder artist-img" src="res/sheypounder.png" alt="SHEYPOUNDER" class="artist-img">
                         <div class="artist-info">
                             <span class="artist-tag">⭐ Headliner</span>
                             <h3 class="artist-name">SHEYPOUNDER</h3>
@@ -232,30 +232,37 @@
                 </div>
         
                 <!-- LIVE ACTS -->
-                <div class="column is-one-quarter">
+                <div class="column is-one-fifth">
                     <div class="artist-card">
-                        <div class="img-placeholder artist-img">Photo</div>
+                        <img class="img-placeholder artist-img" src="res/vinhora.png" alt="Vinhora" class="artist-img">
                         <span class="artist-tag">Live Act</span>
                         <h3 class="artist-name">Vinhora</h3>
                     </div>
                 </div>
-                <div class="column is-one-quarter">
+                <div class="column is-one-fifth">
                     <div class="artist-card">
-                        <div class="img-placeholder artist-img">Photo</div>
-                        <span class="artist-tag">Live Act</span>
-                        <h3 class="artist-name">Richard Kings</h3>
-                    </div>
-                </div>
-                <div class="column is-one-quarter">
-                    <div class="artist-card">
-                        <div class="img-placeholder artist-img">Photo</div>
+                        <img class="img-placeholder artist-img" src="res/asaba.png" alt="Asaba" class="artist-img">
                         <span class="artist-tag">Live Act</span>
                         <h3 class="artist-name">Asaba</h3>
                     </div>
                 </div>
-                <div class="column is-one-quarter">
+                <div class="column is-one-fifth">
                     <div class="artist-card">
-                        <div class="img-placeholder artist-img">Photo</div>
+                        <img class="img-placeholder artist-img" src="res/richardking.png" alt="Richard Kings" class="artist-img">
+                        <span class="artist-tag">Live Act</span>
+                        <h3 class="artist-name">Richard Kings</h3>
+                    </div>
+                </div>
+                <div class="column is-one-fifth">
+                    <div class="artist-card">
+                        <img class="img-placeholder artist-img" src="res/dimakay.png" alt="Dimakay Makossa" class="artist-img">
+                        <span class="artist-tag">Live Act</span>
+                        <h3 class="artist-name">Dimakay Makossa</h3>
+                    </div>
+                </div>
+                <div class="column is-one-fifth">
+                    <div class="artist-card">
+                        <img class="img-placeholder artist-img" src="res/maxymanorh.png" alt="Maxy Manorh" class="artist-img">
                         <span class="artist-tag">Live Act</span>
                         <h3 class="artist-name">Maxy Manorh</h3>
                     </div>
@@ -472,41 +479,131 @@
  
  
   
- <!-- ////////////////////////////////////////////////////
+  <!-- ////////////////////////////////////////////////////
        LOCATION
   //////////////////////////////////////////////////// -->
-    <section id="location" class="section">
-        <div class="container">
-        <div class="columns is-vcentered">
-    
-            <!-- MAP PLACEHOLDER -->
-            <div class="column is-half">
-            <div class="img-placeholder map-placeholder">Map</div>
-            </div>
-    
-            <!-- ADDRESS -->
-            <div class="column is-half">
-                <div class="section-label">
-                    <div class="flag-stripe">
-                        <span class="fs-1"></span>
-                        <span class="fs-2"></span>
-                        <span class="fs-3"></span>
-                    </div>
-                    <span>Venue</span>
-                </div>
-            <h2 class="section-title">How to Find Us</h2>
-            <p class="section-body">
-                <strong>Drayton Park School</strong><br>
-                Bala Way, Bletchley<br>
-                Milton Keynes, MK2 3HJ
-            </p>
-            <p class="section-body">Gates open from 10:00 AM on 25 July 2026.</p>
-            <a href="https://maps.google.com" target="_blank" class="button outline-btn">Open in Maps →</a>
-            </div>
-    
+  <section id="location" class="section">
+    <div class="container">
+ 
+      <div class="columns is-vcentered">
+ 
+        <!-- MAP PLACEHOLDER -->
+        <div class="column is-half">
+          <div class="img-placeholder map-placeholder">Map</div>
         </div>
+ 
+        <!-- ADDRESS -->
+        <div class="column is-half">
+          <div class="section-label">
+            <div class="flag-stripe">
+              <span class="fs-1"></span>
+              <span class="fs-2"></span>
+              <span class="fs-3"></span>
+            </div>
+            <span>Venue</span>
+          </div>
+          <h2 class="section-title">How to Find Us</h2>
+          <p class="section-body">
+            <strong>Drayton Park School</strong><br>
+            Bala Way, Bletchley<br>
+            Milton Keynes, MK2 3HJ
+          </p>
+          <p class="section-body">Gates open from 10:00 AM on 25 July 2026.</p>
+          <a href="https://maps.google.com/?q=Drayton+Park+School,+Bala+Way,+Bletchley,+Milton+Keynes,+MK2+3HJ" target="_blank" class="button outline-btn">Open in Maps →</a>
         </div>
-    </section>
+ 
+      </div>
+ 
+      <!-- NEARBY STATIONS -->
+      <div class="section-label location-sub-label">
+        <div class="flag-stripe">
+          <span class="fs-1"></span>
+          <span class="fs-2"></span>
+          <span class="fs-3"></span>
+        </div>
+        <span>Getting Here</span>
+      </div>
+ 
+      <div class="station-grid">
+ 
+        <div class="station-card">
+          <div class="station-icon">🚆</div>
+          <div class="station-body">
+            <h4 class="station-name">Bletchley Station</h4>
+            <p class="station-info">Closest station to the venue. A short walk or quick taxi ride to Drayton Park School.</p>
+          </div>
+        </div>
+ 
+        <div class="station-card">
+          <div class="station-icon">🚆</div>
+          <div class="station-body">
+            <h4 class="station-name">Fenny Stratford Station</h4>
+            <p class="station-info">A nearby stop on the East–West Rail line, just minutes from the venue.</p>
+          </div>
+        </div>
+ 
+        <div class="station-card">
+          <div class="station-icon">🚆</div>
+          <div class="station-body">
+            <h4 class="station-name">Milton Keynes Central</h4>
+            <p class="station-info">Main intercity station with direct links from London Euston. Taxi or bus onward to the venue.</p>
+          </div>
+        </div>
+ 
+      </div>
+ 
+      <!-- NEARBY HOTELS -->
+      <div class="section-label location-sub-label">
+        <div class="flag-stripe">
+          <span class="fs-1"></span>
+          <span class="fs-2"></span>
+          <span class="fs-3"></span>
+        </div>
+        <span>Nearby Hotels</span>
+      </div>
+ 
+      <div class="hotel-grid">
+ 
+        <a href="https://www.booking.com/Share-6sqDsDF" target="_blank" rel="noopener" class="hotel-card">
+          <div class="hotel-icon">🏨</div>
+          <div class="hotel-body">
+            <h4 class="hotel-name">Travelodge Milton Keynes Bletchley</h4>
+            <p class="hotel-info">Budget-friendly option right in Bletchley — closest to the venue.</p>
+            <span class="hotel-link">View on Booking.com →</span>
+          </div>
+        </a>
+ 
+        <a href="https://www.booking.com/Share-1E8fs9" target="_blank" rel="noopener" class="hotel-card">
+          <div class="hotel-icon">🏨</div>
+          <div class="hotel-body">
+            <h4 class="hotel-name">Premier Inn Milton Keynes South</h4>
+            <p class="hotel-info">Reliable and comfortable, a short drive from the festival site.</p>
+            <span class="hotel-link">View on Booking.com →</span>
+          </div>
+        </a>
+ 
+        <a href="https://www.booking.com/Share-mkIrfX" target="_blank" rel="noopener" class="hotel-card">
+          <div class="hotel-icon">🏨</div>
+          <div class="hotel-body">
+            <h4 class="hotel-name">DoubleTree by Hilton Milton Keynes</h4>
+            <p class="hotel-info">4-star hotel built into Stadium MK, ideal for groups and families.</p>
+            <span class="hotel-link">View on Booking.com →</span>
+          </div>
+        </a>
+ 
+        <a href="https://www.booking.com/Share-OfS0GM" target="_blank" rel="noopener" class="hotel-card">
+          <div class="hotel-icon">🏨</div>
+          <div class="hotel-body">
+            <h4 class="hotel-name">Holiday Inn Milton Keynes Central</h4>
+            <p class="hotel-info">Full-service hotel with pool and gym, 10 minutes from the venue.</p>
+            <span class="hotel-link">View on Booking.com →</span>
+          </div>
+        </a>
+ 
+      </div>
+ 
+    </div>
+  </section>
  <!-- ////////////////////////////////////////////////////
       Custom Divider
   //////////////////////////////////////////////////// -->
