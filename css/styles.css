@@ -769,3 +769,92 @@ body {
   margin: 0;
   line-height: 1.5;
 }
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////
+   ABOUT PAGE DESIGN
+//////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////
+   ABOUT HERO
+//////////////////////////////////////////////////// */
+.about-hero {
+  background-color: #2a2a2a;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 24px 40px;
+}
+ 
+.about-hero-title {
+  font-family: 'Audiowide', sans-serif;
+  font-size: clamp(48px, 10vw, 90px);
+  font-weight: 700;
+  color: #e0e0e0;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  margin: 0 0 8px;
+}
+ 
+.about-hero-sub {
+  font-family: 'Audiowide', sans-serif;
+  font-size: clamp(36px, 8vw, 72px);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin: 0;
+}
+ 
+/* Outline colour accent letters — grey wireframe for now */
+.ah-c  { color: #aaa; }
+.ah-i  { color: #999; }
+.ah-cf { color: #e0e0e0; }
+
+
+
+/* ////////////////////////////////////////////////////
+   ABOUT INFO SECTION
+//////////////////////////////////////////////////// */
+.about-info-section {
+  background-color: #f5f5f5;
+}
+ 
+.about-page-img {
+  height: 420px;
+}
+ 
+.about-subtitle {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 4px;
+}
+ 
+.about-tagline {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 20px;
+}
+ 
+
+
+/* ////////////////////////////////////////////////////
+   MISSION SECTION
+//////////////////////////////////////////////////// */
+.about-mission-section {
+  background-color: #ebebeb;
+}
+ 
+.mission-img {
+  height: 380px;
+}
