@@ -16,6 +16,11 @@ body {
   background-color: #f5f5f5;
   color: #1a1a1a;
 }
+.container {
+  max-width: 100% !important;
+  padding-left: 158px !important;
+  padding-right: 158px !important;
+}
 
 
 
@@ -24,7 +29,7 @@ body {
 //////////////////////////////////////////////////// */
 .navbar {
   background-color: #e0e0e0;
-  min-height: 56px;
+  min-height: 72px;
   display: flex;
   align-items: center;
   position: sticky;
@@ -34,18 +39,26 @@ body {
   border-bottom: 1px solid #bbb;
 }
 
-.logo {
+/* .logo {
   width: auto;
-  height: 100%;
+  height: 500px;
+  size: 122px;   
+  padding: 5px;
+} */
+.brand-logo img {
+  max-height: none !important;
+  height: 120px;
+  width: auto;
   padding: 5px;
 }
+
 .brand-wordmark {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
 }
 .brand-est {
-  font-size: 0.65rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #777;
   letter-spacing: 0.15em;
@@ -53,7 +66,7 @@ body {
 }
 .nav-link {
   color: #333;
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   transition: color 0.2s ease;
@@ -75,7 +88,7 @@ body {
   background-color: #333;
   color: #fff;
   border-radius: 4px;
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   font-weight: 700;
   border: 1.5px solid #333;
   transition: 0.2s ease;
@@ -130,7 +143,7 @@ body {
  
 .hero-title {
   font-family: 'Audiowide', sans-serif;
-  font-size: clamp(36px, 8vw, 90px);
+  font-size: clamp(72px, 20vw, 160px); 
   line-height: 0.95;
   color: #e0e0e0;
   letter-spacing: 0.03em;
@@ -143,11 +156,11 @@ body {
 }
  
 .hero-tagline {
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: #999;
-  max-width: 480px;
-  line-height: 1.7;
+  max-width: 580px;
+  line-height: 1.5;
   margin: 0 auto 36px;
 }
 
@@ -187,14 +200,14 @@ body {
  
 .ht-day {
   font-family: 'Audiowide', sans-serif;
-  font-size: 42px;
+  font-size: 72px;
   line-height: 1;
   color: #e0e0e0;
 }
  
 .ht-month,
 .ht-year {
-  font-size: 0.65rem;
+  font-size: 0.95rem;
   font-weight: 800;
   color: #aaa;
   letter-spacing: 0.15em;
@@ -208,7 +221,7 @@ body {
 }
  
 .ht-time {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 800;
   color: #aaa;
   letter-spacing: 0.12em;
@@ -217,7 +230,7 @@ body {
 }
  
 .ht-venue {
-  font-size: 0.85rem;
+  font-size: 1.125rem;
   font-weight: 600;
   color: #e0e0e0;
   line-height: 1.5;
@@ -228,7 +241,7 @@ body {
   display: inline-block;
   background-color: #e0e0e0;
   color: #333;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 800;
   padding: 7px 18px;
   border-radius: 4px;
@@ -254,7 +267,7 @@ body {
 }
  
 .conveyor-label {
-  font-size: 0.65rem;
+  font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -307,7 +320,7 @@ body {
 }
  
 .aname {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: #222;
   margin: 0;
@@ -315,7 +328,7 @@ body {
 }
  
 .atag {
-  font-size: 0.65rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #666;
   margin: 0;
@@ -358,8 +371,8 @@ body {
  
 .fc-icon {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   background-color: #d0d0d0;
   border: 1px solid #bbb;
   border-radius: 8px;
@@ -370,20 +383,20 @@ body {
 }
  
 .fc-icon svg {
-  width: 22px;
-  height: 22px;
+  width: 100px;
+  height: 100px;
 }
  
 .fc-title {
   font-family: 'Audiowide', sans-serif;
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0 0 4px;
 }
  
 .fc-body {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   color: #666;
   line-height: 1.6;
   margin: 0;
@@ -392,34 +405,37 @@ body {
 /* ////////////////////////////////////////////////////
    SHARED SECTION STYLES
 //////////////////////////////////////////////////// */
-.section {
-  padding: 80px 0;
-  background-color: #f5f5f5;
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
  
-.section-alt {
-  background-color: #ebebeb;
-}
- 
-.section-eyebrow {
-  font-size: 0.7rem;
+.section-label span:last-child {
+  font-size: 0.95rem;
   font-weight: 800;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: #999;
-  margin-bottom: 8px;
 }
  
-.section-title {
-  font-family: 'Audiowide', sans-serif;
-  font-size: clamp(1.6rem, 4vw, 2.8rem);
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 20px;
+.flag-stripe {
+  display: flex;
+  height: 14px;
+  width: 28px;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid #bbb;
 }
+ 
+.flag-stripe span { flex: 1; }
+.fs-1 { background-color: #aaa; }
+.fs-2 { background-color: #888; }
+.fs-3 { background-color: #bbb; }
  
 .section-body {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #555;
   line-height: 1.7;
   margin-bottom: 28px;
@@ -431,7 +447,7 @@ body {
   border: 2px solid #333;
   border-radius: 4px;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   transition: 0.2s ease;
 }
  
@@ -455,18 +471,32 @@ body {
  
 .artist-headliner {
   display: flex;
+  flex-direction: row;
   gap: 24px;
   align-items: center;
+  padding: 24px;
+  justify-content: center;
 }
- 
+
+
 .artist-img {
-  height: 180px;
+  height: 380px;
   min-width: 180px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto 12px auto;
 }
- 
+
 .artist-headliner .artist-img {
-  min-width: 220px;
-  height: 220px;
+  width: 260px;
+  height: 500px;
+  flex-shrink: 0;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+  margin: 0;
 }
  
 .artist-tag {
@@ -481,13 +511,13 @@ body {
  
 .artist-name {
   font-family: 'Audiowide', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #1a1a1a;
   margin: 0 0 10px;
 }
  
 .artist-bio {
-  font-size: 0.9rem;
+   font-size: 1rem;
   color: #666;
   line-height: 1.6;
   margin: 0;
@@ -499,35 +529,6 @@ body {
 .tickets-section {
   background-color: #ebebeb;
 }
- 
-.section-label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
- 
-.section-label span:last-child {
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: #999;
-}
- 
-.flag-stripe {
-  display: flex;
-  height: 14px;
-  width: 28px;
-  border-radius: 2px;
-  overflow: hidden;
-  border: 1px solid #bbb;
-}
- 
-.flag-stripe span { flex: 1; }
-.fs-1 { background-color: #aaa; }
-.fs-2 { background-color: #888; }
-.fs-3 { background-color: #bbb; }
  
 .ticket-tiers {
   display: flex;
@@ -551,7 +552,7 @@ body {
 }
  
 .tier-label {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -560,13 +561,13 @@ body {
  
 .tier-price {
   font-family: 'Audiowide', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #1a1a1a;
 }
  
 .tier-desc {
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   color: #666;
   line-height: 1.6;
   margin: 0;
@@ -582,7 +583,7 @@ body {
   padding: 12px 16px;
   margin-bottom: 28px;
   color: #555;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   line-height: 1.5;
 }
  
@@ -611,7 +612,7 @@ body {
   color: #f5f5f5;
   border: 2px solid #333;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 1.85rem;
   font-weight: 700;
   padding: 14px 36px;
   transition: 0.2s ease;
@@ -626,6 +627,23 @@ body {
 /* ////////////////////////////////////////////////////
    SCHEDULE
 //////////////////////////////////////////////////// */
+.section-eyebrow {
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 8px;
+}
+ 
+.section-title {
+  font-family: 'Audiowide', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
 .schedule-list {
   max-width: 640px;
   margin: 0 auto;
@@ -641,7 +659,7 @@ body {
  
 .sched-time {
   font-family: 'Audiowide', sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #888;
   min-width: 90px;
@@ -649,14 +667,14 @@ body {
 }
  
 .sched-act {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0 0 4px;
 }
  
 .sched-stage {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   color: #888;
   margin: 0;
   letter-spacing: 0.06em;
@@ -690,14 +708,14 @@ body {
  
 .expect-title {
   font-family: 'Audiowide', sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0 0 8px;
 }
  
 .expect-body {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   color: #666;
   line-height: 1.6;
   margin: 0;
@@ -739,8 +757,8 @@ body {
  
 .cc-icon {
   flex-shrink: 0;
-  width: 44px;
-  height: 44px;
+  width: 66px;
+  height: 66px;
   background-color: #d0d0d0;
   border: 1px solid #bbb;
   border-radius: 8px;
@@ -758,14 +776,14 @@ body {
  
 .cc-title {
   font-family: 'Audiowide', sans-serif;
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0;
 }
  
 .cc-info {
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   color: #555;
   margin: 0;
   line-height: 1.5;
@@ -803,14 +821,14 @@ body {
  
 .station-name {
   font-family: 'Audiowide', sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0 0 4px;
 }
  
 .station-info {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   color: #666;
   line-height: 1.5;
   margin: 0;
@@ -852,21 +870,21 @@ body {
  
 .hotel-name {
   font-family: 'Audiowide', sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0;
 }
  
 .hotel-info {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   color: #666;
   line-height: 1.5;
   margin: 0;
 }
  
 .hotel-link {
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: #555;
   letter-spacing: 0.03em;
@@ -940,7 +958,7 @@ body {
 }
  
 .about-tagline {
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -1003,3 +1021,61 @@ body {
 .gallery-item:hover video {
   transform: scale(1.04);
 }
+
+
+/* ////////////////////////////////////////////////////
+   FOOTER
+//////////////////////////////////////////////////// */
+.site-footer {
+  background-color: #2a2a2a;
+  padding: 60px 0 40px;
+  border-top: 1px solid #444;
+}
+ 
+.footer-brand {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin: 0 0 2px;
+  font-weight: 700;
+}
+ 
+.footer-sub {
+  font-size: 0.7rem;
+  color: #777;
+  letter-spacing: 0.15em;
+  margin: 0 0 16px;
+}
+ 
+.footer-copy {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0;
+}
+ 
+.footer-heading {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+ 
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ 
+.footer-links li { margin-bottom: 8px; }
+ 
+.footer-links a {
+  font-size: 0.85rem;
+  color: #777;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+ 
+.footer-links a:hover { color: #e0e0e0; }
+
