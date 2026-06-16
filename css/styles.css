@@ -13,11 +13,11 @@ body {
   /* font-family: 'Oxanium', sans-serif; */
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #FFF3E3;
   color: #1a1a1a;
 }
 .container {
-  max-width: 100% !important;
+  max-width: 100% !important;  
   padding-left: 158px !important;
   padding-right: 158px !important;
 }
@@ -28,7 +28,7 @@ body {
    NAVBAR
 //////////////////////////////////////////////////// */
 .navbar {
-  background-color: #e0e0e0;
+  background-color: #FFCE0A;
   min-height: 72px;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@ body {
   top: 0;
   z-index: 1000;
   padding: 0 1rem;
-  border-bottom: 1px solid #bbb;
+  
 }
 
 /* .logo {
@@ -58,9 +58,9 @@ body {
   line-height: 1.1;
 }
 .brand-est {
-  font-size: 1.25rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  color: #777;
+  color: #070707;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -78,25 +78,25 @@ body {
 }
  
 .nav-link.active {
-  color: #000;
+  color: #e61f1f;
   font-weight: 700;
   border: 1.5px solid #333;
   border-radius: 4px;
 }
 /* Get tickets link */
 .nav-cta-btn {
-  background-color: #333;
-  color: #fff;
+  background-color: #e61f1f;
+  color: #FFF3E3;
   border-radius: 4px;
   font-size: 1.25rem;
   font-weight: 700;
-  border: 1.5px solid #333;
+  border: 1.5px solid #aa1414;
   transition: 0.2s ease;
 }
  
 .nav-cta-btn:hover {
-  background-color: #fff;
-  color: #333;
+  background-color: #1FB701;
+  color: #FFF3E3;
 }
  
 .navbar-burger span {
@@ -114,9 +114,9 @@ body {
 }
  
 .stripe span { flex: 1; }
-.s1 { background-color: #aaa; }
-.s2 { background-color: #999; }
-.s3 { background-color: #bbb; }
+.s1 { background-color: #1FB701; }
+.s2 { background-color: #FF120A; }
+.s3 { background-color: #F2C40C; }
  
 
 /* ////////////////////////////////////////////////////
@@ -137,7 +137,7 @@ body {
   font-weight: 800;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #aaa;
+  color: #e2cb47;
   margin-bottom: 20px;
 }
  
@@ -154,12 +154,23 @@ body {
   color: transparent;
   -webkit-text-stroke: 1px #aaa;
 }
+.cameroon {
+  color: #009639; 
+}
+
+.international {
+  color: #ce1126; 
+}
+
+.cultural {
+  color: #fcd116; 
+}
  
 .hero-tagline {
   font-size: 1.25rem;
   font-weight: 500;
-  color: #999;
-  max-width: 580px;
+  color: #FFF3E3;
+  max-width: 680px;
   line-height: 1.5;
   margin: 0 auto 36px;
 }
@@ -168,7 +179,7 @@ body {
 .hero-ticket {
   display: inline-flex;
   align-items: stretch;
-  background-color: #444;
+  background-color: #ce1126;
   border: 1px solid #666;
   border-radius: 10px;
   max-width: 420px;
@@ -202,14 +213,14 @@ body {
   font-family: 'Audiowide', sans-serif;
   font-size: 72px;
   line-height: 1;
-  color: #e0e0e0;
+  color: #fffefe;
 }
  
 .ht-month,
 .ht-year {
   font-size: 0.95rem;
   font-weight: 800;
-  color: #aaa;
+  color: #ffffff;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -223,7 +234,7 @@ body {
 .ht-time {
   font-size: 0.9rem;
   font-weight: 800;
-  color: #aaa;
+  color: #2b2a2a;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 4px;
@@ -232,14 +243,14 @@ body {
 .ht-venue {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #e0e0e0;
+  color: #fffdfd;
   line-height: 1.5;
   margin-bottom: 14px;
 }
  
 .ht-btn {
   display: inline-block;
-  background-color: #e0e0e0;
+  background-color: #dfa916;
   color: #333;
   font-size: 0.9rem;
   font-weight: 800;
@@ -251,7 +262,7 @@ body {
 }
  
 .ht-btn:hover {
-  background-color: #fff;
+  background-color: #c29607;
   color: #000;
 }
 
@@ -260,7 +271,7 @@ body {
    CONVEYOR BELT
 //////////////////////////////////////////////////// */
 .conveyor-outer {
-  background-color: #e0e0e0;
+  background-color: #2d5cb3;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   overflow: hidden;
@@ -272,7 +283,7 @@ body {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   text-align: center;
-  color: #999;
+  color: #f8f8f8;
   padding: 10px 0 4px;
 }
  
@@ -363,23 +374,35 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #e4e4e4;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 24px;
+}
+
+.card-1 {
+  background-color: #00963970; /* Cameroon green */
+  color: #fff;
+}
+
+.card-2 {
+  background-color: #ce11276b; /* Cameroon red */
+  color: #fff;
+}
+.card-3 {
+  background-color: #fcd21679; /* Cameroon yellow */
+  color: #1a1a1a;
 }
  
 .fc-icon {
   flex-shrink: 0;
   width: 80px;
   height: 80px;
-  background-color: #d0d0d0;
-  border: 1px solid #bbb;
+  background-color: #0b183500;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #555;
+  color: #070707;
 }
  
 .fc-icon svg {
@@ -390,6 +413,7 @@ body {
 .fc-title {
   font-family: 'Audiowide', sans-serif;
   font-size: 1.25rem;
+  padding-top: 5px;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0 0 4px;
@@ -430,9 +454,9 @@ body {
 }
  
 .flag-stripe span { flex: 1; }
-.fs-1 { background-color: #aaa; }
-.fs-2 { background-color: #888; }
-.fs-3 { background-color: #bbb; }
+.fs-1 { background-color: #1FB701; }
+.fs-2 { background-color: #FF120A; }
+.fs-3 { background-color: #F2C40C; }
  
 .section-body {
   font-size: 1.25rem;
@@ -452,7 +476,7 @@ body {
 }
  
 .outline-btn:hover {
-  background-color: #333;
+  background-color: #e61f1f;
   color: #f5f5f5;
 }
 
@@ -462,7 +486,7 @@ body {
    LINEUP
 //////////////////////////////////////////////////// */
 .artist-card {
-  background-color: #e4e4e4;
+  background-color: #e4e4e438;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
@@ -540,8 +564,23 @@ body {
 .ticket-tier {
   background-color: #e0e0e0;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 25px;
   padding: 20px 24px;
+}
+
+.tier-1 {
+  background-color: #00963970; /* Cameroon green */
+  color: #fff;
+}
+
+.tier-2 {
+  background-color: #ce11276b; /* Cameroon red */
+  color: #fff;
+   border: 6px solid gold;
+}
+.tier-3 {
+  background-color: #fcd21679; /* Cameroon yellow */
+  color: #1a1a1a;
 }
  
 .tier-header {
@@ -556,7 +595,7 @@ body {
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #444;
+  color: #2e2e2e;
 }
  
 .tier-price {
@@ -568,7 +607,7 @@ body {
  
 .tier-desc {
   font-size: 1.05rem;
-  color: #666;
+  color: #424242;
   line-height: 1.6;
   margin: 0;
 }
@@ -583,7 +622,7 @@ body {
   padding: 12px 16px;
   margin-bottom: 28px;
   color: #555;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1.5;
 }
  
@@ -596,6 +635,8 @@ body {
 .ticket-cta-wrap {
   text-align: center;
 }
+
+
  
 
 
@@ -608,9 +649,8 @@ body {
 }
  
 .cta-btn {
-  background-color: #333;
+  background-color: #e61f1f;
   color: #f5f5f5;
-  border: 2px solid #333;
   border-radius: 4px;
   font-size: 1.85rem;
   font-weight: 700;
@@ -619,8 +659,8 @@ body {
 }
  
 .cta-btn:hover {
-  background-color: transparent;
-  color: #333;
+  background-color:  #009639;
+  color: #f5f5f5;
 }
 
 
