@@ -10,7 +10,7 @@
 *, *::before, *::after { box-sizing: border-box; }
  
 body {
-  /* font-family: 'Oxanium', sans-serif; */
+  font-family: 'Bebas Neue', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #FFF3E3;
@@ -142,7 +142,9 @@ body {
 }
  
 .hero-title {
-  font-family: 'Audiowide', sans-serif;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: clamp(72px, 20vw, 160px); 
   line-height: 0.95;
   color: #e0e0e0;
@@ -356,7 +358,7 @@ body {
 
 
 /* ////////////////////////////////////////////////////
-   ABOUT — feature cards
+   ABOUT SECTION — feature cards
 //////////////////////////////////////////////////// */
 .about-img {
   height: 420px;
@@ -515,6 +517,7 @@ body {
 .artist-headliner .artist-img {
   width: 260px;
   height: 500px;
+  font-weight: 700;
   flex-shrink: 0;
   object-fit: contain;
   object-position: center;
@@ -537,6 +540,7 @@ body {
   font-size: 1.6rem;
   color: #1a1a1a;
   margin: 0 0 10px;
+  font-weight: 700;
 }
  
 .artist-bio {
@@ -969,6 +973,13 @@ body {
   transform: scale(1.2);
 
 }
+.icon-info{
+  padding-top: 24px;
+  font-size: 1.25rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
 
 
 
@@ -1157,4 +1168,470 @@ body {
 }
  
 .footer-links a:hover { color: #e0e0e0; }
+
+
+
+/* ====================================================
+   RESPONSIVE — CICFEST UK
+   Breakpoints:
+     tablet  : max-width 1024px
+     mobile  : max-width 768px
+     small   : max-width 480px
+==================================================== */
+ 
+/* ////////////////////////////////////////////////////
+   TABLET  (≤ 1024px)
+//////////////////////////////////////////////////// */
+@media screen and (max-width: 1024px) {
+ 
+  /* Container — reduce the huge desktop padding */
+  .container {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+ 
+  /* Navbar logo slightly smaller */
+  .brand-logo img {
+    height: 80px;
+  }
+ 
+  /* Hero title scale back a little */
+  .hero-title {
+    font-size: clamp(48px, 12vw, 100px);
+  }
+ 
+  /* About feature cards — wrap to column on tablet */
+  .features-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+ 
+  /* Artist live act cards — 3 per row on tablet */
+  .column.is-one-fifth {
+    width: 33.333% !important;
+  }
+ 
+  /* Headliner: slightly smaller image */
+  .artist-headliner .artist-img {
+    width: 220px;
+    height: 380px;
+  }
+ 
+  /* Expect grid: 2 columns on tablet */
+  .expect-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+  /* Contact cards: stack to 1 column */
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  /* Station grid: 1 column */
+  .station-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+  /* Hotel grid: 1 column */
+  .hotel-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  /* Ticket card wider */
+  .hero-ticket {
+    max-width: 95%;
+  }
+ 
+  /* CTA button slightly smaller */
+  .cta-btn {
+    font-size: 1.4rem;
+  }
+}
+ 
+ 
+/* ////////////////////////////////////////////////////
+   MOBILE  (≤ 768px)
+//////////////////////////////////////////////////// */
+@media screen and (max-width: 768px) {
+ 
+  /* Container — tight mobile padding */
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+ 
+  /* ---- NAVBAR ---- */
+  .navbar {
+    min-height: 64px;
+    padding: 0 16px;
+  }
+ 
+  .brand-logo img {
+    height: 56px;
+  }
+ 
+  /* Bulma mobile menu: white bg so it reads */
+  .navbar-menu.is-active {
+    background-color: #FFCE0A;
+    padding: 12px 0 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+ 
+  .navbar-menu.is-active .navbar-end {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+    gap: 4px;
+  }
+ 
+  .navbar-menu.is-active .navbar-item {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    width: 100%;
+  }
+ 
+  .navbar-menu.is-active .navbar-item:last-child {
+    border-bottom: none;
+    padding-top: 14px;
+  }
+ 
+  .nav-link {
+    font-size: 1.1rem;
+  }
+ 
+  .nav-cta-btn {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+ 
+  /* ---- HERO ---- */
+  .hero-section {
+    padding: 60px 20px 48px;
+    min-height: auto;
+  }
+ 
+  .hero-title {
+    font-size: clamp(36px, 13vw, 72px);
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+ 
+  .hero-kicker {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+  }
+ 
+  .hero-tagline {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+ 
+  /* Ticket card: stack date above info */
+  .hero-ticket {
+    flex-direction: column;
+    max-width: 340px;
+    border-radius: 12px;
+  }
+ 
+  .hero-ticket::before,
+  .hero-ticket::after {
+    display: none; /* hide the notch cutouts on mobile — they look odd stacked */
+  }
+ 
+  .ht-date {
+    border-right: none;
+    border-bottom: 1px dashed #666;
+    padding: 16px 20px 12px;
+    min-width: unset;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+ 
+  .ht-day {
+    font-size: 52px;
+  }
+ 
+  .ht-month,
+  .ht-year {
+    font-size: 0.8rem;
+  }
+ 
+  .ht-info {
+    padding: 14px 20px 18px;
+    width: 100%;
+  }
+ 
+  /* ---- CONVEYOR BELT ---- */
+  .conveyor-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+  }
+ 
+  .aname {
+    font-size: 1rem;
+  }
+ 
+  .atag {
+    font-size: 0.85rem;
+  }
+ 
+  /* ---- SECTIONS ---- */
+  .section {
+    padding: 60px 0;
+  }
+ 
+  .section-title {
+    font-size: clamp(1.6rem, 6vw, 2.4rem);
+  }
+ 
+  .section-body {
+    font-size: 1rem;
+  }
+ 
+  /* ---- ABOUT FEATURE CARDS ---- */
+  .features-grid {
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 24px;
+  }
+ 
+  /* Bulma columns: force stack on mobile */
+  .columns {
+    flex-direction: column !important;
+  }
+ 
+  .column {
+    width: 100% !important;
+  }
+ 
+  /* ---- LINEUP ---- */
+ 
+  /* Headliner: stack image above text */
+  .artist-headliner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+ 
+  .artist-headliner .artist-img {
+    width: 100%;
+    max-width: 300px;
+    height: 340px;
+  }
+ 
+  /* Live acts: 2 per row */
+  .column.is-one-fifth {
+    width: 50% !important;
+  }
+ 
+  .artist-img {
+    height: 260px;
+    min-width: unset;
+    width: 100%;
+  }
+ 
+  .artist-name {
+    font-size: 1.2rem;
+  }
+ 
+  /* ---- TICKETS ---- */
+  .tier-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+ 
+  .tier-label {
+    font-size: 1rem;
+  }
+ 
+  .tier-price {
+    font-size: 1.1rem;
+  }
+ 
+  .tier-desc {
+    font-size: 0.95rem;
+  }
+ 
+  .cta-btn {
+    font-size: 1.1rem;
+    padding: 14px 24px;
+    width: 100%;
+    text-align: center;
+  }
+ 
+  /* ---- SCHEDULE ---- */
+  .schedule-list {
+    max-width: 100%;
+  }
+ 
+  .expect-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+ 
+  .expect-title {
+    font-size: 1rem;
+  }
+ 
+  .expect-body {
+    font-size: 1rem;
+  }
+ 
+  .expect-icon {
+    font-size: 48px;
+  }
+ 
+  .sched-time {
+    font-size: 1rem;
+    min-width: 80px;
+  }
+ 
+  .sched-act,
+  .sched-stage {
+    font-size: 1rem;
+  }
+ 
+  /* ---- CONTACT ---- */
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+ 
+  .cc-title {
+    font-size: 1rem;
+  }
+ 
+  .cc-info {
+    font-size: 1rem;
+  }
+ 
+  .cc-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 28px;
+  }
+ 
+  /* ---- LOCATION ---- */
+  .station-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+ 
+  .hotel-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+ 
+  .station-icon,
+  .hotel-icon {
+    font-size: 36px;
+  }
+ 
+  .station-name,
+  .hotel-name {
+    font-size: 1rem;
+  }
+ 
+  .station-info,
+  .hotel-info {
+    font-size: 0.95rem;
+  }
+ 
+  /* ---- SOCIAL ---- */
+  .icon-title {
+    font-size: 1.6rem;
+  }
+ 
+  /* ---- FOOTER ---- */
+  .site-footer .columns {
+    flex-direction: column !important;
+    gap: 32px;
+  }
+ 
+  .site-footer .column {
+    width: 100% !important;
+  }
+ 
+  /* ---- ABOUT PAGE ---- */
+  .about-hero {
+    padding: 48px 20px 32px;
+    min-height: 200px;
+  }
+ 
+  .cameroon-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+ 
+  .map-placeholder {
+    min-height: 240px;
+    margin-bottom: 24px;
+  }
+}
+ 
+ 
+/* ////////////////////////////////////////////////////
+   SMALL MOBILE  (≤ 480px)
+//////////////////////////////////////////////////// */
+@media screen and (max-width: 480px) {
+ 
+  .container {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+ 
+  .hero-title {
+    font-size: clamp(30px, 11vw, 52px);
+  }
+ 
+  .hero-tagline {
+    font-size: 0.9rem;
+  }
+ 
+  /* Live acts: 1 per row on very small screens */
+  .column.is-one-fifth {
+    width: 100% !important;
+  }
+ 
+  .artist-img {
+    height: 300px;
+  }
+ 
+  .cta-btn {
+    font-size: 1rem;
+  }
+ 
+  .section-title {
+    font-size: clamp(1.4rem, 7vw, 2rem);
+  }
+ 
+  .fc-body,
+  .section-body {
+    font-size: 0.95rem;
+  }
+ 
+  .ht-day {
+    font-size: 40px;
+  }
+ 
+  .about-hero-title {
+    font-size: clamp(36px, 10vw, 60px);
+  }
+ 
+  .about-hero-sub {
+    font-size: clamp(26px, 8vw, 48px);
+  }
+}
+
+
 
