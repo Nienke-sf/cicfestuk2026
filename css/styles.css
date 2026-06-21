@@ -28,7 +28,8 @@ body {
    NAVBAR
 //////////////////////////////////////////////////// */
 .navbar {
-  background-color: #FFCE0A;
+  font-family: "Bungee", sans-serif;
+  background-color: #fdfdfc;
   min-height: 72px;
   display: flex;
   align-items: center;
@@ -58,8 +59,9 @@ body {
   line-height: 1.1;
 }
 .brand-est {
+  font-family: "Bungee", sans-serif;
   font-size: 0.65rem;
-  font-weight: 600;
+  font-weight: 200;
   color: #5c5c5c;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -67,7 +69,7 @@ body {
 .nav-link {
   color: #333;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 100;
   letter-spacing: 0.04em;
   transition: color 0.2s ease;
 }
@@ -79,8 +81,7 @@ body {
  
 .nav-link.active {
   color: #e61f1f;
-  font-weight: 700;
-  border: 1.5px solid #333;
+  font-weight: 100;
   border-radius: 4px;
 }
 /* Get tickets link */
@@ -89,7 +90,7 @@ body {
   color: #FFF3E3;
   border-radius: 4px;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 200;
   border: 1.5px solid #aa1414;
   transition: 0.2s ease;
 }
@@ -111,7 +112,7 @@ body {
   margin-top: 10px;
   width: 56px;
   height: 56px;
-  background-color: #FFCE0A;
+  background-color: #FFF3E3;
   border-radius: 6px;
   border: 1px solid #1FB701;
 }
@@ -190,6 +191,7 @@ body {
 }
  
 .hero-tagline {
+ font-family: "Fredoka", sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
   color: #FFF3E3;
@@ -233,7 +235,7 @@ body {
 }
  
 .ht-day {
-  font-family: 'Audiowide', sans-serif;
+  font-family: "Antonio", sans-serif;
   font-size: 72px;
   line-height: 1;
   color: #fffefe;
@@ -249,6 +251,7 @@ body {
 }
  
 .ht-info {
+  font-family: "Fredoka", sans-serif;
   padding: 16px 20px;
   text-align: left;
   flex: 1;
@@ -301,8 +304,9 @@ body {
 }
  
 .conveyor-label {
+  font-family: "Bungee", sans-serif;
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 200;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   text-align: center;
@@ -354,8 +358,9 @@ body {
 }
  
 .aname {
+  font-family: "Bungee", sans-serif;
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 200;
   color: #222;
   margin: 0;
   letter-spacing: 0.04em;
@@ -433,15 +438,16 @@ body {
 }
  
 .fc-title {
-  font-family: 'Audiowide', sans-serif;
+  font-family: "Bungee", sans-serif;
   font-size: 1.25rem;
   padding-top: 5px;
-  font-weight: 700;
+  font-weight: 200;
   color: #1a1a1a;
   margin: 0 0 4px;
 }
  
 .fc-body {
+  font-family: "Fredoka", sans-serif;
   font-size: 1.25rem;
   color: #666;
   line-height: 1.6;
@@ -458,6 +464,23 @@ body {
   margin-bottom: 10px;
 }
  
+.section-eyebrow {
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 8px;
+}
+ 
+.section-title {
+  font-family: "Bungee", sans-serif;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-weight: 200;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
 .section-label span:last-child {
   font-size: 0.95rem;
   font-weight: 800;
@@ -481,6 +504,7 @@ body {
 .fs-3 { background-color: #F2C40C; }
  
 .section-body {
+  font-family: "Fredoka", sans-serif;
   font-size: 1.25rem;
   color: #555;
   line-height: 1.7;
@@ -488,11 +512,12 @@ body {
 }
  
 .outline-btn {
+  font-family: "Bungee", sans-serif;
   background-color: transparent;
   color: #333;
   border: 2px solid #333;
   border-radius: 4px;
-  font-weight: 700;
+  font-weight: 200;
   font-size: 1.25rem;
   transition: 0.2s ease;
 }
@@ -547,8 +572,9 @@ body {
 }
  
 .artist-tag {
+  font-family: "Bungee", sans-serif;
   font-size: 0.65rem;
-  font-weight: 800;
+  font-weight: 200;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #777;
@@ -557,11 +583,11 @@ body {
 }
  
 .artist-name {
-  font-family: 'Audiowide', sans-serif;
+  font-family: "Bungee", sans-serif;
   font-size: 1.6rem;
   color: #1a1a1a;
   margin: 0 0 10px;
-  font-weight: 700;
+  font-weight: 200;
 }
  
 .artist-bio {
@@ -615,21 +641,23 @@ body {
 }
  
 .tier-label {
+  font-family: "Bungee", sans-serif;
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 200;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #2e2e2e;
 }
  
 .tier-price {
-  font-family: 'Audiowide', sans-serif;
+  font-family: "Bungee", sans-serif;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 200;
   color: #1a1a1a;
 }
  
 .tier-desc {
+  font-family: "Fredoka", sans-serif;
   font-size: 1.05rem;
   color: #424242;
   line-height: 1.6;
@@ -673,11 +701,12 @@ body {
 }
  
 .cta-btn {
+  font-family: "Bungee", sans-serif;
   background-color: #e61f1f;
   color: #f5f5f5;
   border-radius: 4px;
   font-size: 1.85rem;
-  font-weight: 700;
+  font-weight: 200;
   padding: 14px 36px;
   transition: 0.2s ease;
 }
@@ -691,23 +720,6 @@ body {
 /* ////////////////////////////////////////////////////
    SCHEDULE
 //////////////////////////////////////////////////// */
-.section-eyebrow {
-  font-size: 1.55rem;
-  font-weight: 800;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: #999;
-  margin-bottom: 8px;
-}
- 
-.section-title {
-  font-family: 'Audiowide', sans-serif;
-  font-size: clamp(2rem, 5vw, 3.8rem);
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 20px;
-}
-
 .schedule-list {
   max-width: 640px;
   margin: 0 auto;
@@ -722,22 +734,24 @@ body {
 }
  
 .sched-time {
-  font-family: 'Audiowide', sans-serif;
+  font-family: "Bungee", sans-serif;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 200;
   color: #888;
   min-width: 90px;
   margin: 0;
 }
  
 .sched-act {
+  font-family: "Bungee", sans-serif;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 200;
   color: #1a1a1a;
   margin: 0 0 4px;
 }
  
 .sched-stage {
+  font-family: "Bungee", sans-serif;
   font-size: 1.25rem;
   color: #888;
   margin: 0;
@@ -771,9 +785,9 @@ body {
 }
  
 .expect-title {
-  font-family: 'Audiowide', sans-serif;
+  font-family: "Bungee", sans-serif;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 200;
   color: #1a1a1a;
   margin: 0 0 8px;
 }
@@ -841,7 +855,7 @@ body {
 }
  
 .cc-title {
-  font-family: 'Audiowide', sans-serif;
+  font-family: "Fredoka", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: #1a1a1a;
@@ -887,14 +901,15 @@ body {
 }
  
 .station-name {
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Bungee', sans-serif;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 200;
   color: #1a1a1a;
   margin: 0 0 4px;
 }
  
 .station-info {
+  font-family: 'Fredoka', sans-serif;
   font-size: 1.25rem;
   color: #666;
   line-height: 1.5;
@@ -954,14 +969,15 @@ body {
 }
  
 .hotel-name {
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Bungee', sans-serif;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 200;
   color: #1a1a1a;
   margin: 0;
 }
  
 .hotel-info {
+  font-family: 'Fredoka', sans-serif;
   font-size: 1.25rem;
   color: #666;
   line-height: 1.5;
@@ -978,9 +994,9 @@ body {
 
 
 .icon-title{
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Bungee', sans-serif;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 200;
   margin-bottom: 24px;
   color: #1a1a1a;
 
@@ -1024,9 +1040,9 @@ body {
 }
  
 .about-hero-title {
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Bungee', sans-serif;
   font-size: clamp(48px, 10vw, 90px);
-  font-weight: 700;
+  font-weight: 200;
   color: #e0e0e0;
   letter-spacing: 0.06em;
   line-height: 1;
@@ -1034,9 +1050,9 @@ body {
 }
  
 .about-hero-sub {
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Bungee', sans-serif;
   font-size: clamp(36px, 8vw, 72px);
-  font-weight: 700;
+  font-weight: 200;
   letter-spacing: 0.04em;
   line-height: 1;
   margin: 0;
@@ -1061,16 +1077,17 @@ body {
 }
  
 .about-subtitle {
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Bungee', sans-serif;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 200;
   color: #1a1a1a;
   margin: 0 0 4px;
 }
  
 .about-tagline {
+  font-family: 'Bungee', sans-serif;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 100;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #999;
@@ -1083,6 +1100,7 @@ body {
    MISSION SECTION
 //////////////////////////////////////////////////// */
 .about-mission-section {
+  font-family: 'Fredoka', sans-serif;
   background-color: #ebebeb;
 }
  
@@ -1135,6 +1153,61 @@ body {
 
 
 /* ////////////////////////////////////////////////////
+   FAQ
+//////////////////////////////////////////////////// */
+.faq-section {
+  background-color: #f5f5f5;
+}
+ 
+.faq-list {
+  max-width: 720px;
+  margin: 32px auto 0;
+}
+ 
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 18px 0;
+}
+ 
+.faq-item:first-child {
+  border-top: 1px solid #ccc;
+}
+ 
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+ 
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+ 
+.faq-arrow {
+  font-size: 1.1rem;
+  color: #888888;
+  transition: transform 0.2s ease;
+}
+ 
+.faq-item[open] .faq-arrow {
+  transform: rotate(180deg);
+}
+ 
+.faq-answer {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.7;
+  margin: 14px 0 0;
+}
+
+
+
+/* ////////////////////////////////////////////////////
    FOOTER
 //////////////////////////////////////////////////// */
 .site-footer {
@@ -1144,11 +1217,11 @@ body {
 }
  
 .footer-brand {
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Bungee', sans-serif;
   font-size: 1.2rem;
   color: #e0e0e0;
   margin: 0 0 2px;
-  font-weight: 700;
+  font-weight: 200;
 }
  
 .footer-sub {
@@ -1165,8 +1238,9 @@ body {
 }
  
 .footer-heading {
+  font-family: 'Bungee', sans-serif;
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 200;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #aaa;
@@ -1174,6 +1248,7 @@ body {
 }
  
 .footer-links {
+  font-family: 'Fredoka', sans-serif;
   list-style: none;
   padding: 0;
   margin: 0;
