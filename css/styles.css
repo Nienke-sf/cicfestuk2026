@@ -29,7 +29,7 @@ body {
 //////////////////////////////////////////////////// */
 .navbar {
   font-family: "Bungee", sans-serif;
-  background-color: #fdfdfc;
+  background-color: #fafaf8;
   min-height: 72px;
   display: flex;
   align-items: center;
