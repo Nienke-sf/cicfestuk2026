@@ -893,6 +893,7 @@ body {
   text-decoration: none;
   transition: all 0.25s ease;
   border: 1px solid transparent;
+  margin: 40px;
 }
  
 .station-icon {
@@ -1059,9 +1060,10 @@ body {
 }
  
 /* Outline colour accent letters — grey wireframe for now */
-.ah-c  { color: #aaa; }
-.ah-i  { color: #999; }
-.ah-cf { color: #e0e0e0; }
+.ah-c  { color: #1FB701; }
+.ah-i  { color: #FF120A; }
+.ah-cf { color: #F2C40C; }
+
 
 
 
