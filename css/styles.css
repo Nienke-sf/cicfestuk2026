@@ -84,6 +84,10 @@ body {
   font-weight: 100;
   border-radius: 4px;
 }
+
+
+
+
 /* Get tickets link */
 .nav-cta-btn {
   background-color: #e61f1f;
@@ -297,7 +301,6 @@ body {
    CONVEYOR BELT
 //////////////////////////////////////////////////// */
 .conveyor-outer {
-  background-color: #2d5cb3;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   overflow: hidden;
@@ -310,7 +313,7 @@ body {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   text-align: center;
-  color: #f8f8f8;
+  color: #010008;
   padding: 10px 0 4px;
 }
  
@@ -513,9 +516,9 @@ body {
  
 .outline-btn {
   font-family: "Bungee", sans-serif;
-  background-color: transparent;
-  color: #333;
-  border: 2px solid #333;
+  background-color:#FFF3E3;
+  color: #0a0a0a;
+  border: 2px solid #555;
   border-radius: 4px;
   font-weight: 200;
   font-size: 1.25rem;
