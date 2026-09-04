@@ -38,4 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
  
+  /* ------------------------------------------------ 
+       GALLERY LIGHTBOX 
+  ------------------------------------------------ */
+   if (typeof GLightbox !== 'undefined') { GLightbox({ 
+    selector: '.glightbox', 
+    touchNavigation: true, 
+    loop: true, 
+    closeButton: true, 
+    keyboardNavigation: true, 
+    zoomable: true }); } 
+  
+
 });
