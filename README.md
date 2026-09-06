@@ -1,6 +1,6 @@
 # cicfestuk2026
 Cameroonian International Cultural Festival 
-🌐 Live Site: [cicfestuk.com]
+🌐 Live Site: cicfestuk.com
 
 # 📋 About This Project
 CICFEST UK is the first Cameroonian International Cultural Festival to be held in the United Kingdom; it's a day to celebrate Cameroonian music, food, dance, fashion, and heritage. The event brings together the Cameroonian diaspora, friends, and allies for a day of culture-building, understanding, innovation, and learning. 
